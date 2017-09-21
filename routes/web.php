@@ -22,4 +22,5 @@ Route::middleware(['auth'])->get('/home', 'HomeController@index')->name('home');
 Route::middleware(['auth'])->prefix('scwpanel')->group(function () {
 	Route::get('/', function(){ return redirect('/scwpanel/dashboard'); });
     Route::get('/dashboard', 'HomeController@index');
+    Route::get('/theme', 'ThemeController@index');
 });

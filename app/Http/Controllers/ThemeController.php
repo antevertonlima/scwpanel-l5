@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Theme;
 
-class HomeController extends AdminBaseController
+class ThemeController extends AdminBaseController
 {
-
     /**
      * Show the application dashboard.
      *
@@ -14,6 +14,7 @@ class HomeController extends AdminBaseController
      */
     public function index()
     {
-        return $this->theme->view('index');
+    	$themes = Theme::all();
+        return $this->theme->view('index_theme',compact('themes'));
     }
 }

@@ -16,6 +16,7 @@ class Themes extends Migration
         Schema::create('themes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('type')->default('back');
             $table->string('active')->default('N');
             $table->timestamps();
         });

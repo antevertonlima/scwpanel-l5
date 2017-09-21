@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Facuz\Theme\Contracts\Theme;
 use App\Http\Controllers\Controller;
 
-class BaseController extends Controller
+class AdminBaseController extends Controller
 {
     /**
 	 * Theme instance.
@@ -23,7 +23,11 @@ class BaseController extends Controller
 	public function __construct(Theme $theme)
 	{
 		//pega thema ativo
-		$tema     = DB::table('themes')->select('name')->where('active', 'A')->first();
+		$tema     = DB::table('themes')->select('name')
+		                               ->where('active', 'A')
+		                               ->where('type','back')
+		                               ->first();
+		                               
 		$temaName = (is_null($tema)) ? env('APP_THEME') : $tema->name;
 
 		// Using theme as a global.
