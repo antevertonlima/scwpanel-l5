@@ -182,6 +182,11 @@ return [
          */
         Facuz\Theme\ThemeServiceProvider::class,
 
+        /*
+         * chumper/zipper
+         */
+        ZanySoft\Zip\ZipServiceProvider::class,
+
     ],
 
     /*
@@ -231,6 +236,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Theme' => Facuz\Theme\Facades\Theme::class,
+        'Zip' => ZanySoft\Zip\ZipFacade::class,
     ],
 
 ];

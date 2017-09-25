@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a34793e7e2ccafc00749cd691f65102",
-    "content-hash": "754f3e055f693c0d48a1fc6ea2f28b52",
+    "hash": "2cab62bd38bb55adea3687d987fe136a",
+    "content-hash": "6c306674bfbae1e8209a18443c8e5614",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1023,16 +1023,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e"
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
                 "shasum": ""
             },
             "require": {
@@ -1101,7 +1101,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-08-04 13:39:04"
+            "time": "2017-09-22 20:46:04"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2109,6 +2109,55 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "zanysoft/laravel-zip",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zanysoft/laravel-zip.git",
+                "reference": "c1f24b26d1c58c1951f7e8aba6683a6a4652719c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zanysoft/laravel-zip/zipball/c1f24b26d1c58c1951f7e8aba6683a6a4652719c",
+                "reference": "c1f24b26d1c58c1951f7e8aba6683a6a4652719c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0",
+                "scrutinizer/ocular": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZanySoft\\Zip\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zany Soft",
+                    "email": "info@zanysoft.co",
+                    "homepage": "http://www.zanysoft.co"
+                }
+            ],
+            "description": "ZipArchive toolbox",
+            "homepage": "http://www.zanysoft.co",
+            "keywords": [
+                "merge",
+                "multiple",
+                "unzip",
+                "zip",
+                "ziparchive"
+            ],
+            "time": "2017-05-26 12:24:06"
         }
     ],
     "packages-dev": [
@@ -2370,16 +2419,16 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "144c307535e82c8fdcaacbcfc1d6d8eeb896687c"
+                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/144c307535e82c8fdcaacbcfc1d6d8eeb896687c",
-                "reference": "144c307535e82c8fdcaacbcfc1d6d8eeb896687c",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "shasum": ""
             },
             "require": {
@@ -2420,7 +2469,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2015-12-27 11:43:31"
+            "time": "2017-09-11 18:02:19"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -2828,16 +2877,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.21",
+            "version": "5.7.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3b91adfb64264ddec5a2dee9851f354aa66327db"
+                "reference": "10df877596c9906d4110b5b905313829043f2ada"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3b91adfb64264ddec5a2dee9851f354aa66327db",
-                "reference": "3b91adfb64264ddec5a2dee9851f354aa66327db",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/10df877596c9906d4110b5b905313829043f2ada",
+                "reference": "10df877596c9906d4110b5b905313829043f2ada",
                 "shasum": ""
             },
             "require": {
@@ -2906,7 +2955,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-06-21 08:11:54"
+            "time": "2017-09-24 07:23:38"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

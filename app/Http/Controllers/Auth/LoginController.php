@@ -25,7 +25,7 @@ class LoginController extends AdminBaseController
      *
      * @var string
      */
-    protected $redirectTo = '/scwpanel';
+    protected $redirectTo = '/scwpanel/dashboard';
 
     /**
      * Create a new controller instance.

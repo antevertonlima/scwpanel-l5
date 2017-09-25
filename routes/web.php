@@ -20,7 +20,10 @@ Auth::routes();
 Route::middleware(['auth'])->get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->prefix('scwpanel')->group(function () {
-	Route::get('/', function(){ return redirect('/scwpanel/dashboard'); });
-    Route::get('/dashboard', 'HomeController@index');
-    Route::get('/theme', 'ThemeController@index');
+	Route::get('/dashboard', 'HomeController@index')->name('scwpanel.dashboard');
+    Route::prefix('theme')->group(function(){
+    	Route::get('/', 'ThemeController@index')->name('theme.list');
+    	Route::get('/upload', 'ThemeController@upload')->name('theme.set');
+		Route::post('/upload', 'ThemeController@move')->name('theme.send');
+    });
 });
