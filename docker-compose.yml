@@ -34,7 +34,7 @@ services:
       - "6379:6379"
   # PHP (with Nginx)
   # you can change from nginx to apache, just change session 'image'
-  app:
+  app-scwpanel:
     image: ambientum/php:7.2-nginx
     container_name: scwpanel-app
     volumes:
